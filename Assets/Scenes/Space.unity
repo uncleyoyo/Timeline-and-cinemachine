@@ -189,6 +189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 31983870}
+  - component: {fileID: 31983871}
   m_Layer: 0
   m_Name: AlienShip
   m_TagString: Untagged
@@ -211,6 +212,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 40.33, z: 0}
+--- !u!114 &31983871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31983869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3eacfdb1d1d227469b152c1adf290eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotSpeed: 1
+  moveSpeed: 1
+  currentSpeed: 0
+  maxRotate: 3
+  shipModel: {fileID: 1095120303}
 --- !u!1 &59193296
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,8 +1001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 15, y: 57}
-  m_SizeDelta: {x: 572.26, y: 108}
+  m_AnchoredPosition: {x: 0.0000047684, y: 0}
+  m_SizeDelta: {x: 449, y: 70.1068}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &568879149
 MonoBehaviour:
@@ -1007,7 +1025,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Press R to change views. Don't press any key or move the mouse for 5 seconds
-    to see cinematic views. Press Esc to Exit. to see intructions again press Q.
+    to see cinematic views. axceerate press T. Deaxcelerate press G Press Esc to
+    Exit. to see intructions again press Q.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1034,8 +1053,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 14.93
+  m_fontSizeBase: 14.93
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1437,6 +1456,11 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1095120303 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: f20f3d697505b4de2a9744b4b3b6badb, type: 3}
+  m_PrefabInstance: {fileID: 2143943997}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1106956143
 GameObject:
   m_ObjectHideFlags: 0
