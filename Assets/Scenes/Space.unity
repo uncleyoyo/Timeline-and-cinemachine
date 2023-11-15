@@ -190,6 +190,7 @@ GameObject:
   m_Component:
   - component: {fileID: 31983870}
   - component: {fileID: 31983871}
+  - component: {fileID: 31983872}
   m_Layer: 0
   m_Name: AlienShip
   m_TagString: Untagged
@@ -229,6 +230,18 @@ MonoBehaviour:
   currentSpeed: 0
   maxRotate: 3
   shipModel: {fileID: 1095120303}
+--- !u!114 &31983872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31983869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f514619ce49694a8326132131aa4cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &59193296
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +561,7 @@ MonoBehaviour:
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_HorizontalAxis:
-    Value: 57
+    Value: 0
     m_SpeedMode: 0
     m_MaxSpeed: 300
     m_AccelTime: 0.1
@@ -556,8 +569,8 @@ MonoBehaviour:
     m_InputAxisName: Mouse X
     m_InputAxisValue: 0
     m_InvertInput: 0
-    m_MinValue: 16
-    m_MaxValue: 88
+    m_MinValue: -10
+    m_MaxValue: 48
     m_Wrap: 0
     m_Recentering:
       m_enabled: 0
@@ -566,7 +579,7 @@ MonoBehaviour:
       m_LegacyHeadingDefinition: -1
       m_LegacyVelocityFilterStrength: -1
   m_HorizontalRecentering:
-    m_enabled: 0
+    m_enabled: 1
     m_WaitTime: 1
     m_RecenteringTime: 2
     m_LegacyHeadingDefinition: -1
@@ -897,8 +910,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 525415660}
-  m_LocalRotation: {x: -0, y: 0.8055665, z: -0, w: 0.59250546}
-  m_LocalPosition: {x: 2.2390003, y: -0.08099997, z: 2.4760005}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.239001, y: -0.08099997, z: 2.4760008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1839658610}
@@ -1661,11 +1674,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1284404495 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400002, guid: 044393cba2ba64e4586435a3081774c6, type: 3}
-  m_PrefabInstance: {fileID: 1866451821}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1314191341
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,7 +2095,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839658609}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2097,6 +2105,7 @@ Transform:
   - {fileID: 1314191343}
   - {fileID: 335110442}
   - {fileID: 1106956144}
+  - {fileID: 1894389629}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2387,13 +2396,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894389627}
-  m_LocalRotation: {x: -0.03597959, y: -0.02758982, z: -0.0009810568, w: 0.9989711}
-  m_LocalPosition: {x: -0.10729168, y: 1.1011112, z: -0.048860144}
-  m_LocalScale: {x: 1.111111, y: 1.1111113, z: 1.1111109}
+  m_LocalRotation: {x: -0, y: 0.7508608, z: -0, w: 0.66046053}
+  m_LocalPosition: {x: 2.239001, y: -0.08099997, z: 2.4760008}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 354088913}
-  m_Father: {fileID: 1284404495}
-  m_RootOrder: 2
+  m_Father: {fileID: 1839658610}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1 &1935090113
 GameObject:
