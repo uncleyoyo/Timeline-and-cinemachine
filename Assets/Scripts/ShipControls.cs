@@ -11,6 +11,8 @@ public class ShipControls : MonoBehaviour
     float horizontal;
     [SerializeField]  float maxRotate;
     [SerializeField]  GameObject shipModel;
+    [SerializeField] Transform cockpitPOV;
+    [SerializeField] Transform camerasparent;
 
     // Start is called before the first frame update
     void Start()
@@ -56,5 +58,8 @@ public class ShipControls : MonoBehaviour
         transform.Rotate(new Vector3(0, 0, -horizontal * 0.2f), Space.Self);
 
         transform.position += transform.forward * currentSpeed * Time.deltaTime;
+
+        Vector3 cockpitRotation = new Vector3(0, transform.eulerAngles.y, 0);
+        cockpitPOV.eulerAngles = cockpitRotation - new Vector3(0,0,camerasparent.eulerAngles.z);
     }
 }

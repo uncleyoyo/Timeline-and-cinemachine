@@ -5,7 +5,7 @@ using UnityEngine;
 public class CameraManager : MonoBehaviour
 {
     [SerializeField] Transform shipTransform;
-    [SerializeField] float followSpeed;
+    //[SerializeField] float followSpeed;
    
     // Start is called before the first frame update
     void Start()
@@ -24,8 +24,9 @@ public class CameraManager : MonoBehaviour
 
     void MoveCamera(Transform parentTransform)
     {
-        Vector3 targetPostion = shipTransform.position;
+        gameObject.transform.rotation = shipTransform.rotation;
+        //Vector3 targetPostion = shipTransform.position;
 
-        parentTransform.position = Vector3.Lerp(parentTransform.position, targetPostion, followSpeed* Time.deltaTime);
+       // parentTransform.position = Vector3.Lerp(parentTransform.position, targetPostion, followSpeed* Time.deltaTime);
     }
 }
